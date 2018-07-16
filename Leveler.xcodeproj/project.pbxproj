@@ -12,6 +12,7 @@
 		77DD718120EB52B100E1E63D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77DD717F20EB52B100E1E63D /* Main.storyboard */; };
 		77DD718320EB52B200E1E63D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77DD718220EB52B200E1E63D /* Assets.xcassets */; };
 		77DD718620EB52B200E1E63D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77DD718420EB52B200E1E63D /* LaunchScreen.storyboard */; };
+		77DD719020EB52CB00E1E63D /* SpiritLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DD718E20EB52CB00E1E63D /* SpiritLevelViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		77DD718220EB52B200E1E63D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77DD718520EB52B200E1E63D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77DD718720EB52B200E1E63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77DD718D20EB52CA00E1E63D /* Leveler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Leveler-Bridging-Header.h"; sourceTree = "<group>"; };
+		77DD718E20EB52CB00E1E63D /* SpiritLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiritLevelViewController.m; sourceTree = "<group>"; };
+		77DD718F20EB52CB00E1E63D /* SpiritLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiritLevelViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,8 +42,11 @@
 		77DD716F20EB52B100E1E63D = {
 			isa = PBXGroup;
 			children = (
+				77DD718F20EB52CB00E1E63D /* SpiritLevelViewController.h */,
+				77DD718E20EB52CB00E1E63D /* SpiritLevelViewController.m */,
 				77DD717A20EB52B100E1E63D /* Leveler */,
 				77DD717920EB52B100E1E63D /* Products */,
+				77DD718D20EB52CA00E1E63D /* Leveler-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +103,7 @@
 				TargetAttributes = {
 					77DD717720EB52B100E1E63D = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -135,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77DD719020EB52CB00E1E63D /* SpiritLevelViewController.m in Sources */,
 				77DD717E20EB52B100E1E63D /* ViewController.swift in Sources */,
 				77DD717C20EB52B100E1E63D /* AppDelegate.swift in Sources */,
 			);
@@ -280,14 +289,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AK7S3D2T2S;
 				INFOPLIST_FILE = Leveler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tech.Leveler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Leveler-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,14 +311,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AK7S3D2T2S;
 				INFOPLIST_FILE = Leveler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tech.Leveler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Leveler-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

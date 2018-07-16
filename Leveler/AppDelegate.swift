@@ -7,10 +7,23 @@
 //
 
 import UIKit
+import CoreMotion
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+  private var motionmanager: CMMotionManager?
+  
+ @objc func sharedManager() -> CMMotionManager? {
+    var onceToken: Int = 0
+    if (onceToken == 0) {
+      self.motionmanager = CMMotionManager()
+    }
+    onceToken = 1
+    return motionmanager
+  }
+  
   var window: UIWindow?
 
 
